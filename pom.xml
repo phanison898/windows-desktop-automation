@@ -7,8 +7,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-		<selenium.version>3.141.0</selenium.version>
-		<appium.version>7.3.0</appium.version>
+		<selenium.version>3.141.59</selenium.version>
+		<appium.version>7.6.0</appium.version>
 		<testng.version>7.10.1</testng.version>
 		<extent.reports.version>5.1.1</extent.reports.version>
 		<commons.io.version>2.16.1</commons.io.version>
