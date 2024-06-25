@@ -55,4 +55,13 @@ public class WebUtil {
 		return getElement(locator).getText();
 	}
 
+	public void pauseInSeconds(int seconds) {
+		try {
+			Thread.sleep(seconds);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 }

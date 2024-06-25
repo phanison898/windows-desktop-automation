@@ -25,9 +25,15 @@ public class CalcScreen extends WebUtil {
 	private By divide = By.name("Divide by");
 	private By equals = By.name("Equals");
 	private String resultLocator = "CalculatorResults";
+	
+	private By restore = By.name("Restore");
 
 	public CalcScreen(WindowsDriver<WebElement> driver) {
 		super(driver);
+	}
+	
+	public void clickRestore() {
+		click(restore);
 	}
 
 	public void clickPlusButton() {

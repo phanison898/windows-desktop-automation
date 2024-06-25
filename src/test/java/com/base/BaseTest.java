@@ -16,6 +16,9 @@ public class BaseTest {
 
 	public static WindowsDriver<WebElement> driver;
 
+//	private final String appPath = "C:/Users/Phanison/Documents/IE.vbs";
+	private final String appPath = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
+
 	@BeforeSuite
 	public void beforeSuite() {
 	}
@@ -27,7 +30,8 @@ public class BaseTest {
 		cap.setCapability("deviceName", "WINDOWS");
 		cap.setCapability("automationName", "WINDOWS");
 		cap.setCapability("driverType", "WINDOWS");
-		cap.setCapability("app", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
+//		cap.setCapability("app", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
+		cap.setCapability("app", appPath);
 		cap.setCapability("ms:waitForAppLaunch", "5");
 		cap.setCapability("ms:experimental-webdriver", false);
 
